@@ -1,6 +1,6 @@
 <div class="navbar-wagon">
   <!-- Logo -->
-  <% link_to "/", class: "navbar-wagon-brand" do %>
+  <% link_to '/', class: "navbar-wagon-brand" do %>
     <%= image_tag "lewagon.png" %>
   <% end %>
 
@@ -8,8 +8,10 @@
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <!-- Search form -->
-    <form action="" class="navbar-wagon-search">
+    <form action="" class='navbar-wagon-search'>
+      <%= link_to "Team", "team.html", class: "navbar-wagon-item navbar-wagon-link"%>
       <input type="text" class="navbar-wagon-search-input" placeholder="Search something">
+
       <button type="submit" class="navbar-wagon-search-btn">
         <i class="fa fa-search"></i>
       </button>
